@@ -5,6 +5,7 @@ import logo from "@/assets/logo-rei.jpeg.asset.json";
 import heroCars from "@/assets/hero-cars.jpg";
 import { CtaGrupo } from "@/components/CtaGrupo";
 import { AlertasOportunidade } from "@/components/AlertasOportunidade";
+import { FloatingWhatsAppButton } from "@/components/FloatingWhatsAppButton";
 import { brl, depoimentos, indicadores, links, veiculos, type Veiculo } from "@/config/site";
 import { trackGroupClick } from "@/lib/tracking";
 
@@ -230,17 +231,18 @@ function Oportunidades() {
       <div className="mx-auto max-w-6xl px-4">
         <SectionTitle sobre="Estoque de repasse" titulo="🔥 Oportunidades de repasse" />
         <p className="mx-auto mt-4 max-w-2xl text-center text-sm text-foreground/70">
-          Valores de referência FIPE quando aplicável. Disponibilidade e condições podem mudar sem
-          aviso.
+          As oportunidades são publicadas diariamente dentro do grupo. Entre agora para não perder nenhuma.
         </p>
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {veiculos.map((v) => (
-            <CardVeiculo key={v.id} v={v} />
-          ))}
-        </div>
+        {veiculos.length > 0 && (
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {veiculos.map((v) => (
+              <CardVeiculo key={v.id} v={v} />
+            ))}
+          </div>
+        )}
         <div className="mt-10 flex justify-center">
           <CtaGrupo local="oportunidades" size="lg">
-            Quero pegar um carro abaixo da FIPE
+            Quero ver as oportunidades no grupo
           </CtaGrupo>
         </div>
       </div>
@@ -480,6 +482,7 @@ function Index() {
       <Footer />
       <CtaFixoMobile />
       <AlertasOportunidade />
+      <FloatingWhatsAppButton />
     </div>
   );
 }
