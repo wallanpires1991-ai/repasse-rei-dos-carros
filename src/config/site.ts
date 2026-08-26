@@ -5,10 +5,6 @@
  * e números do site. Nenhum outro arquivo precisa ser alterado.
  */
 
-import carGolf from "@/assets/car-golf.jpg";
-import carSuv from "@/assets/car-suv.jpg";
-import carSedan from "@/assets/car-sedan.jpg";
-import carPickup from "@/assets/car-pickup.jpg";
 
 /** Links oficiais — troque o link do grupo aqui. */
 export const links = {
