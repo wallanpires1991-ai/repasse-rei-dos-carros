@@ -94,8 +94,8 @@ export const depoimentos: Depoimento[] = [];
  */
 export const indicadores: { label: string; valor: string | null }[] = [
   { label: "👑 Membros em mais de 4 grupos", valor: "+5.000" },
-  { label: "🚗 Oportunidades publicadas", valor: "+200" },
-  { label: "🤝 Oportunidades vendidas", valor: "+50" },
+  { label: "🚗 Oportunidades publicadas", valor: "+800" },
+  { label: "🤝 Oportunidades vendidas", valor: "+200" },
 ];
 
 
