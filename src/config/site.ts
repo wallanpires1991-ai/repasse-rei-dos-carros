@@ -92,11 +92,12 @@ export const depoimentos: Depoimento[] = [];
  * Indicadores. Preencha somente com dados reais conferidos pelo
  * administrador. Deixe null para esconder o indicador.
  */
-export const indicadores: { label: string; valor: number | null; sufixo?: string }[] = [
-  { label: "🚗 Oportunidades publicadas", valor: null },
-  { label: "👑 Membros no grupo", valor: null },
-  { label: "🔥 Oportunidades disponíveis", valor: veiculos.filter((v) => v.disponivel).length },
+export const indicadores: { label: string; valor: string | null }[] = [
+  { label: "👑 Membros em mais de 4 grupos", valor: "+5.000" },
+  { label: "🚗 Oportunidades publicadas", valor: "+200" },
+  { label: "🤝 Oportunidades vendidas", valor: "+50" },
 ];
+
 
 /**
  * Alertas exibidos no canto da tela. São exemplos de DEMONSTRAÇÃO,
