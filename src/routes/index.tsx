@@ -482,6 +482,7 @@ function Index() {
       <Footer />
       <CtaFixoMobile />
       <AlertasOportunidade />
+      <FloatingWhatsAppButton />
     </div>
   );
 }
