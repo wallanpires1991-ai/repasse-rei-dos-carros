@@ -5,6 +5,7 @@ import logo from "@/assets/logo-rei.jpeg.asset.json";
 import heroCars from "@/assets/hero-cars.jpg";
 import { CtaGrupo } from "@/components/CtaGrupo";
 import { AlertasOportunidade } from "@/components/AlertasOportunidade";
+import { FloatingWhatsAppButton } from "@/components/FloatingWhatsAppButton";
 import { brl, depoimentos, indicadores, links, veiculos, type Veiculo } from "@/config/site";
 import { trackGroupClick } from "@/lib/tracking";
 
