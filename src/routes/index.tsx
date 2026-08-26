@@ -325,14 +325,13 @@ function ProvaSocial() {
         <div className="mt-10 grid gap-4 sm:grid-cols-3">
           {indicadores.map((ind) => (
             <div key={ind.label} className="panel rounded-lg p-6 text-center">
-              <p className="font-display text-4xl text-gold">
-                {ind.valor === null ? "—" : `${ind.valor}${ind.sufixo ?? ""}`}
-              </p>
+              <p className="font-display text-4xl text-gold">{ind.valor ?? "—"}</p>
               <p className="mt-1 text-xs tracking-widest text-muted-foreground uppercase">
                 {ind.label}
               </p>
             </div>
           ))}
+
         </div>
       </div>
     </section>
