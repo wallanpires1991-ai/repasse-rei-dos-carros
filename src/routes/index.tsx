@@ -241,6 +241,50 @@ function Oportunidades() {
             ))}
           </div>
         )}
+
+        <div className="panel mt-10 grid items-center gap-0 overflow-hidden rounded-lg lg:grid-cols-2">
+          <div className="relative aspect-[4/3] w-full overflow-hidden bg-surface-2">
+            <img
+              src={golOferta}
+              alt="Volkswagen Gol 1.6 em oferta de repasse"
+              loading="lazy"
+              width={1280}
+              height={960}
+              className="h-full w-full object-cover"
+            />
+            <span className="btn-gold absolute top-4 left-4 rounded-sm px-3 py-1.5 text-sm font-bold">
+              R$ 15.000 de desconto
+            </span>
+            <span className="absolute bottom-4 left-4 rounded-sm border border-gold/50 bg-background/80 px-2 py-0.5 text-[10px] tracking-[0.2em] text-gold uppercase">
+              Exemplo de oportunidade
+            </span>
+          </div>
+          <div className="p-6 sm:p-10">
+            <p className="text-[11px] tracking-[0.25em] text-gold uppercase">Exemplo real de repasse</p>
+            <h3 className="font-display mt-2 text-3xl sm:text-4xl">Gol 1.6</h3>
+            <p className="mt-1 text-xs tracking-widest text-muted-foreground uppercase">
+              130.000 km • Completo
+            </p>
+            <ul className="mt-5 grid grid-cols-2 gap-2 text-sm text-foreground/80">
+              {["Vidro elétrico", "Trava elétrica", "Ar-condicionado", "Direção"].map((item) => (
+                <li key={item} className="flex items-center gap-2">
+                  <ShieldCheck className="h-4 w-4 shrink-0 text-gold" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <p className="font-display mt-6 text-4xl text-gold sm:text-5xl">
+              até R$ 15.000 <span className="text-xl text-foreground/70">de desconto</span>
+            </p>
+            <p className="mt-2 text-xs text-muted-foreground">
+              Valor ilustrativo. Oportunidades reais são publicadas diariamente no grupo.
+            </p>
+            <CtaGrupo local="exemplo-gol" size="lg" className="mt-6 w-full sm:w-auto">
+              <Crown className="h-5 w-5" /> Quero oportunidades assim
+            </CtaGrupo>
+          </div>
+        </div>
+
         <div className="mt-10 flex justify-center">
           <CtaGrupo local="oportunidades" size="lg">
             Quero ver as oportunidades no grupo
