@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Crown, Instagram, MessageCircle, Zap, Star, ShieldCheck } from "lucide-react";
 
-import logo from "@/assets/logo-rei.jpeg.asset.json";
+import logo from "@/assets/logo-rei.jpeg";
 import heroCars from "@/assets/hero-cars.jpg";
 import { CtaGrupo } from "@/components/CtaGrupo";
 import { AlertasOportunidade } from "@/components/AlertasOportunidade";
@@ -35,7 +35,7 @@ function Header() {
       <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-2.5">
         <a href="#top" className="flex min-w-0 items-center gap-2.5">
           <img
-            src={logo.url}
+            src={logo}
             alt="Rei dos Carros VGA"
             width={44}
             height={44}
@@ -71,7 +71,7 @@ function Hero() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/85 via-background/80 to-background" />
       <div className="mx-auto max-w-4xl px-4 text-center">
         <img
-          src={logo.url}
+          src={logo}
           alt="Logo Rei dos Carros VGA"
           width={220}
           height={220}
@@ -403,7 +403,7 @@ function Footer() {
       <div className="grid gap-8 sm:grid-cols-2">
         <div className="flex min-w-0 items-center gap-3">
           <img
-            src={logo.url}
+            src={logo}
             alt="Rei dos Carros VGA"
             width={64}
             height={64}
