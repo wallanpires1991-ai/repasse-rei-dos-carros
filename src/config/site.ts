@@ -13,7 +13,7 @@ import carPickup from "@/assets/car-pickup.jpg";
 /** Links oficiais — troque o link do grupo aqui. */
 export const links = {
   grupo: "https://chat.whatsapp.com/",
-  whatsapp: "https://wa.me/5500000000000",
+  whatsapp: "https://wa.me/message/XUVAAZFYMSRAE1",
   instagram: "https://instagram.com/reidoscarrosvga",
 };
 
@@ -32,49 +32,7 @@ export type Veiculo = {
 };
 
 /** Cadastre / edite os veículos do repasse aqui. */
-export const veiculos: Veiculo[] = [
-  {
-    id: "golf-16",
-    marcaModelo: "VW GOLF 1.6",
-    ano: "2002/2003",
-    km: "160.000 KM",
-    fipe: 29775,
-    repasse: 19000,
-    foto: carGolf,
-    disponivel: true,
-    destaque: "OPORTUNIDADE",
-  },
-  {
-    id: "suv-compacto",
-    marcaModelo: "SUV COMPACTO 1.0 TURBO",
-    ano: "2020/2021",
-    km: "78.400 KM",
-    fipe: 92500,
-    repasse: 79900,
-    foto: carSuv,
-    disponivel: true,
-  },
-  {
-    id: "sedan-automatico",
-    marcaModelo: "SEDAN 1.6 AUTOMÁTICO",
-    ano: "2018/2019",
-    km: "96.200 KM",
-    fipe: 74300,
-    repasse: 64500,
-    foto: carSedan,
-    disponivel: true,
-  },
-  {
-    id: "pickup",
-    marcaModelo: "PICAPE CABINE DUPLA 4X4",
-    ano: "2017/2018",
-    km: "142.000 KM",
-    fipe: 148900,
-    repasse: 129000,
-    foto: carPickup,
-    disponivel: false,
-  },
-];
+export const veiculos: Veiculo[] = [];
 
 /**
  * Depoimentos REAIS de clientes. Comece com a lista vazia e insira
