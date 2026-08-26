@@ -8,7 +8,7 @@
 
 /** Links oficiais — troque o link do grupo aqui. */
 export const links = {
-  grupo: "https://chat.whatsapp.com/",
+  grupo: "https://chat.whatsapp.com/BJVIsi9rPr18ULGYC7z6uB?s=cl&p=a&mlu=0&ilr=0",
   whatsapp: "https://wa.me/message/XUVAAZFYMSRAE1",
   instagram: "https://instagram.com/reidoscarrosvga",
 };
