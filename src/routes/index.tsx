@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Crown, Instagram, MessageCircle, Zap, Star } from "lucide-react";
+import { Crown, Instagram, MessageCircle, Zap, Star, ShieldCheck } from "lucide-react";
 
 import logo from "@/assets/logo-rei.jpeg.asset.json";
 import heroCars from "@/assets/hero-cars.jpg";
@@ -337,6 +337,40 @@ function ProvaSocial() {
     </section>
   );
 }
+
+function AutoAvaliar() {
+  const itens = [
+    "Cadastramos o veículo no Auto Avaliar para o lojista dar o lance.",
+    "Negociação registrada em plataforma, com mais segurança e rastreabilidade.",
+    "Ideal para lojistas que preferem comprar dentro do processo do Auto Avaliar.",
+  ];
+  return (
+    <section id="auto-avaliar" className="mx-auto max-w-6xl px-4 py-16 sm:py-24">
+      <SectionTitle sobre="Para lojistas" titulo="Compra pelo Auto Avaliar" />
+      <div className="panel mt-10 rounded-lg p-6 sm:p-10">
+        <p className="text-base text-foreground/85 sm:text-lg">
+          Quer comprar pelo <span className="text-gold">Auto Avaliar</span>? Sem problema. Se for a
+          sua preferência, colocamos o carro no Auto Avaliar para o lojista trabalhar com total
+          segurança.
+        </p>
+        <ul className="mt-6 grid gap-3 sm:grid-cols-3">
+          {itens.map((t) => (
+            <li key={t} className="flex gap-2 text-sm text-foreground/75">
+              <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+              <span>{t}</span>
+            </li>
+          ))}
+        </ul>
+        <div className="mt-8 flex justify-center">
+          <CtaGrupo local="auto-avaliar" size="lg">
+            <ShieldCheck className="h-5 w-5" /> Quero comprar pelo Auto Avaliar
+          </CtaGrupo>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 
 function CtaFinal() {
   return (
