@@ -3,6 +3,7 @@ import { Crown, Instagram, MessageCircle, Zap, Star, ShieldCheck } from "lucide-
 
 import logo from "@/assets/logo-rei.jpeg";
 import heroCars from "@/assets/hero-cars.jpg";
+import golOferta from "@/assets/gol-oferta.jpg";
 import { CtaGrupo } from "@/components/CtaGrupo";
 import { AlertasOportunidade } from "@/components/AlertasOportunidade";
 import { FloatingWhatsAppButton } from "@/components/FloatingWhatsAppButton";
