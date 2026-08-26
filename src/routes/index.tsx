@@ -472,7 +472,9 @@ function Index() {
         <Oportunidades />
         <Urgencia />
         <ParaQuem />
+        <AutoAvaliar />
         <ProvaSocial />
+
         <CtaFinal />
       </main>
       <Footer />
